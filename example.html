@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav1 {
+            background-color: aqua;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav1 a {
+            text-decoration: none;
+      
+        }
+
+        .navbar1 {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            align-items: center;
+            text-decoration: none;
+            width: 100%;
+
+        }
+
+        .navbar1 a:hover {
+            background-color: lightgray;
+        }
+
+        .link {
+
+            display: flex;
+            color: white;
+            list-style-type: none;
+            flex-wrap: wrap;
+        }
+
+        .navbar1 a {
+            text-decoration: none;
+            margin-right: 20px;
+
+        }
+
+        .navbar1 .logo {
+            height: 50px;
+        }
+
+        .head2 {
+            margin-top: 0px;
+            background: url(handsome.webp)center center/cover no-repeat;
+            height: 400px;
+            color: rgb(236, 234, 229);
+            max-width:  100%;
+            text-align: center;
+    
+        }
+        .head2 h1{
+            padding-top: 50px;
+            
+        }
+
+        .contenar {
+            padding: 20px;
+            display: flex;
+            gap: 2px;
+            justify-content: space-between;
+        }
+
+        .innerBox {
+            background-color: lightblue;
+             transition: transform 0.3s ease;
+            
+            width: 250px;
+            padding: 10px;
+            margin-top: 150px;
+        }
+        .innerBox:hover{
+             transform: translateY(-10px) scale(1);
+        }
+        img{
+            height: 50px;
+            width: 100%;
+        }
+
+
+        /* 1st steup */
+        .outer {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+           gap: 5px;
+            background-color: white;
+            padding: 10px;
+            max-width: 100%;
+        }
+
+        .inner img {
+           height: auto;
+            /* padding: 10px; */
+        }
+
+        .inner3 h2 {
+            background-color: rgb(9, 9, 209);
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .list button {
+            background-color: rgb(202, 242, 22);
+            border-color: white;
+            justify-content: center;
+            text-align: center;
+            width: 200px;
+            height: 40px;
+            font-size: larger;
+        }
+
+        /* 2nd steup */
+        .outer2 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            gap: 5px;
+            background-color: aliceblue;
+            padding: 20px;
+            
+        }
+
+        .demo1 {
+            
+            background-color: white(27, 232, 232);
+            /* margin-top: 10px; */
+            /* padding: 20px; */
+        }
+
+        .demo3 img {
+            height: auto;
+        }
+
+        /* 3 steup */
+        .outer3 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            /* background-color: beige; */
+            padding: 20px;
+            gap: 5px;
+
+        }
+
+        .demo4 img {
+           height: auto;
+            /* margin-top: 10px; */
+            /* padding-left: 20px; */
+
+        }
+
+        .demo5 {
+           
+            background-color: white;
+            /* margin-top: 10px; */
+            padding: 20px;
+
+        }
+
+        /* 4 */
+        .head {
+            background-color: aliceblue;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        .head h2 {
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        .head p {
+            justify-content: center;
+            text-align: center;
+
+        }
+
+        /* stats=== */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            align-items: center;
+            padding: 50px 25px;
+            background-color: white;
+           
+        }
+        .box1 {
+            box-shadow: 5px 5px 10px grey;
+            padding: 30px;
+            text-align: center;
+            /* border-radius: 8px; */
+           transition: transform 0.3s ease;
+        }
+        .box1:hover{
+              transform: translateY(-10px) scale(1);
+        }
+
+        .box1 h1 {
+            color: blue;
+
+        }
+
+        .box1 p {
+            font-size: 20px;
+
+
+        }
+
+
+        /* 5 */
+        .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+
+
+        }
+
+        .box {
+            box-shadow: 5px 5px 10px grey;
+        }
+
+        .grid h3 {
+            text-align: center;
+            padding: 60px;
+        }
+
+
+        /* 6 */
+        .outer6 {
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+            background-color: white;
+            
+            
+        }
+
+        .inner7 {
+             
+            background-color: aqua;
+           padding: 20px;
+        }
+
+        .inner6 img {
+         height: 100%;
+          
+            /* padding: 10px; */
+        }
+
+        .inner7 h2 {
+            background-color: darkblue;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .list1 button {
+            background-color: rgb(202, 242, 22);
+            border-color: white;
+
+            text-align: center;
+            justify-content: center;
+            padding: 20px;
+            margin-left: 50px;
+            font-size: larger;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            background-color: black;
+            color: white;
+        }
+
+        .footer3 {
+            width: 22%;
+        }
+
+        .footer3 h3 {
+            margin-bottom: 15px;
+            color: #fff;
+        }
+
+        .footer3 p {
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .footer3 ul {
+            list-style: none;
+            padding: 0;
+            color: white;
+        }
+        .kal{
+            background-color: blanchedalmond;
+            padding: 10px;
+        }
+        .photo{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            gap: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav1">
+        <div class="left">
+            <a href="#">contact us: 91+ 8459193821</a>
+            <a href="#">Kalpeshthombare@gmail.com</a>
+            <a href="#">Enquire Now</a>
+        </div>
+        <div class="right">
+            <a href="#">Login</a>
+
+        </div>
+    </div>
+    <div class="navbar1">
+        <div class="logo">
+            <img src="download (1).png" alt="">
+
+        </div>
+        <div>
+            <ul class="link">
+                <li><a href="example.html">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="about2.html">About us</a></li>
+                <li><a href="#">Plesment</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Job Openings</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="head2">
+        <h1>kalpesh</h1>
+        <div class="contenar">
+            <div class="innerBox">
+                <img src="images.jpg" alt="">
+            </div>
+            <div class="innerBox"><img src="images.jpg" alt=""></div>
+            <div class="innerBox"><img src="images.jpg" alt=""></div>
+            <div class="innerBox"><img src="images.jpg" alt=""></div>
+        </div>
+    </div>
+    <div class="stats">
+        <div class="box1">
+            <h1>14</h1>
+            <p>Years</p>
+        </div>
+        <div class="box1">
+            <h1>380</h1>
+            <p>Companies</p>
+        </div>
+        <div class="box1">
+            <h1>400</h1>
+            <p>Goole Review </p>
+        </div>
+        <div class="box1">
+            <h1>4.5</h1>
+            <p>Goole Review Rating</p>
+        </div>
+
+    </div>
+
+    <div class="outer">
+        <div class="inner">
+            <img src="Prognoz.jpg" alt="">
+
+        </div>
+        <div class="inner2">
+            <h1>Online IT Courses With Placement</h1>
+            <div class="inner3">
+                <p> Our courses are designed to equip you with the skills and knowledge that employers seek, giving you
+                    a competitive edge.</p>
+                <h2>FLAT 50% DISCOUNT !!</h2>
+            </div>
+            <div class="list">
+                <ul>
+                    <li>Instructor-led Virtual Live Sessions</li>
+                    <li>Mentorship and Interview Preparation</li>
+                    <li>100% Placement Assistance</li>
+                </ul>
+                <button>copy</button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 2nd steup -->
+    <div class="outer2">
+        <div class="demo1">
+            <h1>Enhance your concepts in Our Instructor-led Online Live Sessions</h1>
+            <div class="demo2">
+                <p> Our IT courses with placement offer Hybrid learning, A combination of online self-learning and
+                    online Instructor-led live class learning has gained popularity in recent times.
+                    It developes self-discipline, which is a crucial success metric in today's world, you feel more
+                    confident and can become more independent.</p>
+
+            </div>
+        </div>
+        <div class="demo3">
+            <img src="live_online_sessions.png" alt="">
+        </div>
+    </div>
+    <!-- 3rd steup -->
+    <div class="outer3">
+        <div class="demo4">
+            <img src="Upskilling-Courses.png" alt="">
+
+        </div>
+        <div class="demo5">
+            <h1>Enhance skills. Raise your market value. Learn from the comfort of your couch.</h1>
+            <div class="demo6">
+                <p>Programming and Technology Self Learning Courses in Python, Java, .NET, Angular, React, Web
+                    Development, Software Testing, MySQL, Machine Learning etc. for Beginners and Professionals. Keep
+                    learning to advance your career and apply for jobs through our Job Portal.</p>
+
+            </div>
+            <div class="list3">
+                <ul>
+                    <li>High Demand Courses in Coding, Testing, Data Science</li>
+                    <li>Completion Certificate</li>
+                    <li>Free Courses also available</li>
+                    <li>Free Access to our Exclusive Job Portal</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="head">
+        <h2>Why Choose Us?</h2>
+        <p>A choice that makes the difference</p>
+
+        <div class="grid">
+            <div class="box">
+                <h3> hssbssss</h3>
+
+            </div>
+            <div class="box">
+                <h3> hssbssss</h3>
+            </div>
+            <div class="box">
+                <h3> hssbssss</h3>
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="box">
+                <h3> hssbssss</h3>
+            </div>
+            <div class="box">
+                <h3> hssbssss</h3>
+            </div>
+            <div class="box">
+                <h3> hssbssss</h3>
+            </div>
+        </div>
+    </div>
+    <!-- 6 steup -->
+    <div class="outer6">
+        <div class="inner6">
+            <img src="job.jpg" alt="">
+
+        </div>
+        <div class="inner7">
+            <h1> Grab Your Dream Job With Our Placement Assistance</h1>
+            <div class="inner8">
+                <p>We are associated with 400+ organizations to provide them trained technology professionals. Get the
+                    best placement assistance with:</p>
+                <h2>FLAT 50% DISCOUNT !!</h2>
+            </div>
+            <div class="list1">
+                <ul>
+                    <li>Communication Skills Sessions</li>
+                    <li>Resume Preparation</li>
+                    <li>Mock Interviews & Mentoring</li>
+                    <li> Interview Schedule</li>
+                </ul>
+                <button>copy</button>
+            </div>
+        </div>
+
+    </div>
+    <div>
+        <p>Lorem ipsum dolor sit, <b>amet consectetur adipisicing elit.</b> Dolor sapiente et, architecto magnam illo
+            qui quaerat omnis expedita sit vel eum sint veritatis eaque exercitationem tempore quasi nihil repellat
+            dolorum!</p>
+        <h1>Why Choose The Part</h1>
+        <p> <b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b> <mark>Molestiae vel odit labore excepturi
+                fugit assumenda quos quam veritatis facere, accusantium, magnam eum, voluptatibus adipisci?</mark>
+            Eveniet repudiandae excepturi labore ex! Sequi.
+            Blanditiis tempora, libero ea beatae dolorum dicta fugit quisquam incidunt sunt nobis deleniti quasi officia
+            laboriosam voluptas doloribus tempore excepturi voluptatibus nemo fuga sequi est aut. Eligendi dicta est ea?
+        </p>
+    </div>
+    <!-- 7 steup -->
+    <div class="kal">
+        <h1>Our Students Are Working At</h1>
+        <p>Thousands of students achieved their dream job at</p>
+        <div class="photo">
+            <img src="11.png" alt="">
+            <img src="10.png" alt="">
+            <img src="9.png" alt="">
+            <img src="12.png" alt="">
+            <img src="8.png" alt="">
+            <img src="7.png" alt="">
+            <img src="3.png" alt="">
+            <img src="19.png" alt="">
+        </div>
+   <button>Viwe All</button> 
+    </div>
+    <div class="footer">
+        <div class="footer3">
+             <img src="download (1).png" alt="" >
+        <p><strong>Prognoz Technologies Pvt. Ltd.</strong></p>
+        <p></p>
+        </div>
+        <div class="footer3">
+            
+            <h3>Placement Programs</h3>
+            
+            <ul>
+                <li>Hands-On Technical Project</li>
+                <li>AI Integrated Digital Marketing</li>
+                <li>Data Analytics</li>
+                <li>Full Stack Web Developer</li>
+                <li>Front-End Web Developer</li>
+                <li>Full Stack Python Developer</li>
+                <li>Full Stack Java Developer</li>
+                <li>Full Stack .Net Developer</li>
+                <li>Software Testing</li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h3>Placement Programs</h3>
+            <ul>
+                <li>Hands-On Technical Project</li>
+                <li>AI Integrated Digital Marketing</li>
+                <li>Data Analytics</li>
+                <li>Full Stack Web Developer</li>
+                <li>Front-End Web Developer</li>
+                <li>Full Stack Python Developer</li>
+                <li>Full Stack Java Developer</li>
+                <li>Full Stack .Net Developer</li>
+                <li>Software Testing</li>
+            </ul>
+        </div>
+        <div class="footer3">
+            <h3>Placement Programs</h3>
+            <ul>
+                <li>Hands-On Technical Project</li>
+                <li>AI Integrated Digital Marketing</li>
+                <li>Data Analytics</li>
+                <li>Full Stack Web Developer</li>
+                <li>Front-End Web Developer</li>
+                <li>Full Stack Python Developer</li>
+                <li>Full Stack Java Developer</li>
+                <li>Full Stack .Net Developer</li>
+                <li>Software Testing</li>
+            </ul>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
